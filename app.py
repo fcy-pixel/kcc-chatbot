@@ -17,7 +17,7 @@ MODEL_NAME = "qwen-plus"
 # ---------- 側邊欄 ----------
 with st.sidebar:
     st.header("🚌 中華基督教會基慈小學")
-    st.caption("保母車查詢 Empowerd by Qwen AI")
+    st.caption("保母車查詢 Powered by Qwen AI")
 
     if not QWEN_API_KEY:
         QWEN_API_KEY = st.text_input("Qwen API Key", type="password")
@@ -78,7 +78,7 @@ if mode == "🔧 管理員":
 # 聊天模式
 # ==========================================
 st.title("🚌 中華基督教會基慈小學")
-st.subheader("保母車查詢 Empowerd by Qwen AI")
+st.subheader("保母車查詢 Powered by Qwen AI")
 st.caption("根據已上傳的保母車文件，使用 AI 回答查詢")
 
 if not QWEN_API_KEY:
