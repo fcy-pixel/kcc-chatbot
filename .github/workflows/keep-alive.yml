@@ -1,0 +1,10 @@
+name: Keep Streamlit Alive
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping app
+        run: curl -s -o /dev/null -w "%{http_code}" https://kcc-chatbot-zvm8b9n4cctznvghwffh9x.streamlit.app
